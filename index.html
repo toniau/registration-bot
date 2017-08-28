@@ -2,9 +2,63 @@
 <html>
 <head>
     <title>regi-bot</title>
+    
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <!-- JS -->
 </head>
+    
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    .form-style{
+        font-size: 2em;
+    }
+    .input-style {
+        height: 40px;
+        width: 300px;
+        font-size: 20pt;
+        border: 20px solid gold;
+    }
+    #submit-btn{
+        height: 40px;
+        width: 100px;
+        font-size: 14pt;
+    }
+</style>
 
 <body>
     <h1>learning how to node/selenium together</h1>
+    
+    <hr />
+    <br/>
+    
+    <form id="myForm"> 
+        <p class="form-style">first name <br/>
+            <span class="input-style"><input id="firstName" class="input-style" name="firstName" type="text" /></span>
+        </p>
+
+        <p class="form-style">last name <br/>
+            <span class="input-style"><input id="lastName" class="input-style" id="l2" name="lastName" type="text" /></span>
+        </p>
+        
+        <p class="form-style">food <br/>
+            <span class="input-style">
+                <select id="food" name="food">
+                    <option value="1">ramen</option>
+                    <option value="2">curry</option>
+                    <option value="3">pho</option>
+                </select>
+            </span>
+        </p>
+        <br/>
+        <input id="submit-btn" type="submit" value="Submit" />
+    </form>
 </body>
 </html>
