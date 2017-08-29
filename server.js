@@ -8,8 +8,14 @@ var driver = new webdriver.Builder().forBrowser('firefox').build();
 driver.manage().deleteAllCookies();
 
 // navigate to my test site
-driver.get('toniau.github.io/registration-bot');
+driver.get('https://toniau.github.io/registration-bot/');
 // fill out form
 driver.findElement(By.id('firstName')).sendKeys('Toeknee');
 driver.findElement(By.id('lastName')).sendKeys('Ow');
 driver.findElement(By.css('#food > option:nth-child(3)')).click();
+
+// click submit button
+driver.findElement(By.id('submit-btn')).click();
+
+// sleep
+driver.sleep(8000);
