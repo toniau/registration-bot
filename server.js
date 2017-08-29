@@ -14,8 +14,8 @@ driver.findElement(By.id('firstName')).sendKeys('Toeknee');
 driver.findElement(By.id('lastName')).sendKeys('Ow');
 driver.findElement(By.css('#food > option:nth-child(3)')).click();
 
+// wait
+driver.sleep(4000);
+
 // click submit button
 driver.findElement(By.id('submitBtn')).click();
-
-// sleep
-driver.sleep(8000);
