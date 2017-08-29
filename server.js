@@ -19,3 +19,21 @@ driver.sleep(4000);
 
 // click submit button
 driver.findElement(By.id('submitBtn')).click();
+
+
+/* To my HackRU friendos, you might want to
+ * capture screenshot when you encounter error.
+ * How to do that:
+ *
+ * 1) Include fs module
+ *    var fs = require('fs');
+ *
+ * 2) Take screenshot
+ *    driver.takeScreenshot().then(function(data) {
+ *	     fs.writeFileSync('img.png', data, 'base64');
+ *    });
+ * 
+ * It saves to your current directory.
+ * Remember to use date/timestamp or something
+ * to change image name each time so you don't overwrite!
+ */
